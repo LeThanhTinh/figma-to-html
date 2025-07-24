@@ -22,9 +22,8 @@ a {
 
 .heading-lv2 {
   color: #171100;
-  font-family: Sen;
+  font-family: var(--font-heading);
   font-size: 3.8rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.27; /* 126.316% */
   letter-spacing: -0.76px;
@@ -444,9 +443,9 @@ a {
   padding: 96px 0;
 }
 
-.feedback .feedback-list{
+.feedback .feedback-list {
   display: flex;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .feedback-item {
@@ -513,7 +512,55 @@ a {
   line-height: 1.54; /* 153.846% */
 }
 
+/* ============================================== Fetures ============================================== */
+.features {
+  margin-top: 135px;
+  padding: 65px;
+  /* background-color: red; */
+}
 
-.feedback-item .avatar{
+.features .body {
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+}
 
+.features .img {
+  display: flex;
+  gap: 30px;
+}
+
+.features .img img {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .img .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  /* margin-left: auto; */
+  width: 40%;
+
+  /* margin-top: 58px; */
+  /* align-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .content .desc {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+
+.features .content .cta-btn {
+  margin-top: 16px;
+  width: 137px;
+  height: 50px;
+  background: #ffb900;
 }
