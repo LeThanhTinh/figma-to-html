@@ -444,9 +444,16 @@ a {
   padding: 96px 0;
 }
 
-.feedback-item {
+.feedback .feedback-list{
   display: flex;
-  justify-content: space-between;
+    overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -504,4 +511,9 @@ a {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54; /* 153.846% */
+}
+
+
+.feedback-item .avatar{
+
 }
